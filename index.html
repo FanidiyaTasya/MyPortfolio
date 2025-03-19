@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container-lg">
             <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,88 +22,59 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section>
+    <section id="home" class="mt-2 py-5">
         <div class="container-lg mt-4">
             <div class="banner rounded-4 p-5 text-center text-white">
                 <p class="fs-4">Hey! I am</p>
-                <h2 class="display-1 fw-bold">Fanidiya Tasya <br> Fitriananda</h2>
+                <h1 class="display-1 fw-bold">Fanidiya Tasya <br> Fitriananda</h1>
             </div>
         </div>
     </section>
 
-    <section class="mt-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h5 class="fw-bold">UI/UX Design</h5>
-                    <p>At in proin consequat ut cursus venenatis sapien.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold">Illustration</h5>
-                    <p>At in proin consequat ut cursus venenatis sapien.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold">Graphic Design</h5>
-                    <p>At in proin consequat ut cursus venenatis sapien.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-5 py-5">
+    <section id="about" class="mt-5 py-5">
         <div class="container-lg">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="img/tsy.jpg" class="img-fluid rounded" alt="Profile Picture" style="max-width: 80%;">
+                    <img src="img/about-me.jpeg" class="img-fluid rounded" alt="Profile Picture"
+                        style="max-width: 80%;">
                 </div>
                 <div class="col-md-8">
                     <h2 class="fw-bold">About Me</h2>
-                    <p class="text-muted">Mahasiswa aktif program studi Teknik Informatika dengan keahlian dalam
-                        pengembangan sistem berbasis website dan aplikasi mobile. Berpengalaman dalam membangun sistem
-                        backend aplikasi mobile, mengelola database, dan mengembangkan sistem informasi berbasis web.
-                        Memiliki minat utama di Web Development serta antusias untuk terus belajar dan berkontribusi
-                        dalam tim.</p>
+                    <div class="d-flex justify-content-between border-top border-secondary pt-3 pb-2"></div>
+                    <p class="text-muted">An active student of the Informatics Engineering program at Jember State
+                        Polytechnic,
+                        with expertise in
+                        developing web-based systems and mobile applications. Experienced in building mobile application
+                        backend systems, managing databases, and developing web-based information systems.
+                        Has a primary interest in Web Development and is enthusiastic about continuous learning and
+                        contributing
+                        within a team.</p>
                     <a href="#" class="btn-download mt-3">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-3">
-        <div class="container-lg">
-            <h2 class="fw-bold mb-3">My Education</h2>
-            <div class="d-flex justify-content-between border-top border-secondary pt-3 pb-2">
-                <div>
-                    <h5 class="fw-bold mb-1">Politeknik Negeri Jember</h5>
-                    <p class="mb-0">Diploma in Information Technology</p>
-                </div>
-                <div class="text-end">
-                    <p class="fw-bold mb-1">2022 - Present</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-5">
+    <section id="projects" class="mt-5 py-5">
         <div class="container-lg">
             <h2 class="fw-bold mb-4">My Projects</h2>
+            <div class="d-flex justify-content-between border-top border-secondary pt-3 pb-2"></div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card border-0 shadow-sm">
                         <img src="img/IS-USG.png" class="card-img-top" alt="IS-USG">
                         <div class="card-body">
-                            <h6 class="card-title"><strong>IS-USG: Sistem Deteksi Kebuntingan Domba</strong></h6>
-                            <p class="card-text">Sistem berbasis AI dan USG untuk mendeteksi kebuntingan domba melalui
-                                web dan aplikasi mobile.</p>
+                            <h6 class="card-title"><strong>IS-USG: Intelligent Ultrasonography System for Pregnant Sheep Based on Web and Mobile</strong></h6>
+                            <p class="card-text">An AI and ultrasound-based system to detect sheep pregnancy through web and mobile applications.</p>
                         </div>
                     </div>
                 </div>
@@ -107,9 +82,8 @@
                     <div class="card border-0 shadow-sm">
                         <img src="img/PatrolTrack.png" class="card-img-top" alt="PatrolTrack">
                         <div class="card-body">
-                            <h6 class="card-title"><strong>PatrolTrack: Manajemen Patroli Keamanan</strong></h6>
-                            <p class="card-text">Sistem monitoring patroli berbasis GPS, barcode scanning, dan laporan
-                                real-time.</p>
+                            <h6 class="card-title"><strong>PatrolTrack: Security Patrol Management and Monitoring Application Based on Web and Mobile</strong></h6>
+                            <p class="card-text">A patrol monitoring system based on GPS, barcode scanning, and real-time reporting.</p>
                         </div>
                     </div>
                 </div>
@@ -117,9 +91,26 @@
                     <div class="card border-0 shadow-sm">
                         <img src="img/AssignMe.png" class="card-img-top" alt="AssignMe">
                         <div class="card-body">
-                            <h6 class="card-title"><strong>AssignMe: Manajemen Pengumpulan Tugas</strong></h6>
-                            <p class="card-text">Sistem digital untuk pengumpulan tugas, manajemen kelas, dan distribusi
-                                materi pembelajaran.</p>
+                            <h6 class="card-title"><strong>AssignMe: Assignment Collection and Management Application Based on Web and Mobile</strong></h6>
+                            <p class="card-text">A digital system for assignment submission, class management, and learning material distribution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="img/citramedia-2.png" class="card-img-top" alt="CitraMedia Ver2">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>CitraMedia Ver2: Printing Stock and Order Management System Based on Desktop</strong></h6>
+                            <p class="card-text">An information system for managing printing stock and orders, recording inventory, customer orders, and transaction reports to improve operational efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="img/citramedia.png" class="card-img-top" alt="CitraMedia Ver1">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>CitraMedia Ver1: Printing Stock Management System Based on Desktop</strong></h6>
+                            <p class="card-text">An information system for managing printing stock, tracking inventory, recording transactions, and generating stock reports to enhance operational efficiency.</p>
                         </div>
                     </div>
                 </div>
@@ -127,10 +118,10 @@
         </div>
     </section>
 
-    <section class="py-5">
+    <section id="contact" class="mt-5 py-5">
         <div class="container-lg text-center">
             <h2 class="fw-bold mb-4">Contact Me</h2>
-            <p class="text-muted">Jangan ragu untuk menghubungi saya melalui platform berikut:</p>
+            <p class="text-muted">Feel free to contact me through the following platforms:</p>
 
             <div class="row mt-4">
                 <div class="col-md-3">
@@ -174,12 +165,11 @@
         </div>
     </section>
 
-    <footer class="footer py-4">
+    <footer class="footer mt-5 py-5">
         <div class="container-lg text-center">
             <p class="mb-1">© 2025 Fanidiya Tasya Fitriananda.</p>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -9,10 +9,11 @@ body {
 
 .banner {
     padding: 100px 20px;
-    min-height: 350px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .banner,
